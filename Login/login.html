@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="C:\Users\rdecinti\OneDrive - Chewy.com, LLC\Desktop\Mytenerary\Login\login.css">
+    <script src="C:\Users\rdecinti\OneDrive - Chewy.com, LLC\Desktop\Mytenerary\Login\script.js"></script>
+    <title>Document</title>
+</head>
+<body id="body">
+
+
+    <div id="login-form-container">
+            <div class="login-signup-btn">
+                <h1>Login</h1>
+                <button onclick="buttonColor1()" id="select-1">Login</button>
+                <button onclick="buttonColor2();signUpForm()" id="select-2">Sign Up</button>
+            </div>
+            <form action="auth.php" method="post" id ="login-form" onsubmit="login()">  
+        <div class="text-block">
+            <input type="text" class="input"  name="username" id="username" placeholder="Enter your username" required>   
+            <input type="password" class="input" name="password" id="password" placeholder="Enter your password"
+           minlength="4" required>
+            <span id="forgot-pwd"><a class="form-text" href="#">Forgot Password?</a></span>
+        </div>
+
+    <div class="submit-block">
+             
+                    <button type="button" id="submit" onclick="login(this.form);">Log In</button>
+          
+    </div>
+
+    <div class="social-signup-block">
+        <span> Or Sign Up Using </span>
+            <ul class="social-links">
+                <li><a href="#" class="fa fa-facebook"></a>
+                <li><a href="#" class="fa fa-twitter"></a>
+                <li><a href="#" class="fa fa-google"></a></li>
+            </ul>
+        </div>
+    </div>
+
+
+
+
+    <div id="sign-up-container">
+        <div class="sign-up-header">
+        <h1 id="join-text">Join Today!</h1>
+        <button onclick=";buttonColor1();loginForm()" id="select-3">Login</button>
+        <button onclick=";buttonColor2();signUpForm()" id="select-4">Sign Up</button>
+    </div>
+
+    <div class="sign-up-form">
+        <form action="">
+            <div class="sign-up-names">
+
+
+              <p class="label">First Name<span class="required">*</span></p>
+                <input type="text" name="firstname" class="name" required>
+                
+                <p class="label">Last Name<span class="required">*</span></p>
+                <input type="text" name="firstname" class="name" required> 
+                
+                <p class="label">Email Address<span class="required">*</span></p>
+                <input type="text" name="email" class="name" required>
+            </div>
+
+
+            <div class="tosContainer">
+                <input type="checkbox" id="tosAgree" name="tosAgree" value="AGREE">
+                <label for="tosAgree">By checking this box I agree that I have read and understand the <a href="#">Terms of Service.<span class="required">*</span></a></label>
+                <input type="submit" id="submit" value="Create Account"></form>
+            </div>
+           
+        
+        </div>
+            
+        </div>
+    </form>      
+</div>
+
+
+</body>
+</html>
