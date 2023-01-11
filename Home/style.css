@@ -1,0 +1,40 @@
+nav{
+  height:75px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+ 
+}
+
+#nav-wrapper{
+  display: flex;
+}
+
+.nav-bar-logo{
+  margin-top:10px;
+  margin-left:10%;
+}
+
+.nav-links{
+  margin-top:10px;
+  margin-right:10%;
+}
+
+#btn-login{
+  margin-top:10px;
+  background-color: #2196F3;
+  border:none;
+  padding:5px 15px;
+  border-radius:3px; 
+  color:#ffffff;
+}
+
+#btn-signup{
+  margin-top:10px;
+  background-color: #1976D2;
+  border:none;
+  border-radius:3px; 
+  color:white;
+  padding:5px 15px;
+}
